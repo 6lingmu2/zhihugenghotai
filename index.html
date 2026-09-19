@@ -1068,10 +1068,10 @@ input:where([type='button'], [type='reset'], [type='submit']),
     <nav class="flex items-center gap-1 text-sm">
       <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">地图总览</button>
       <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">地块总览</button>
-      <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">无机档案</button>
+      <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">无人机档案</button>
       <button data-topmenu class="topmenu-btn active px-3.5 py-1.5 rounded-md bg-white text-agri-green font-medium transition">地块档案</button>
       <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">无人机巡检</button>
-      <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">农壤普查</button>
+      <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">土壤普查</button>
       <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">农事建议</button>
       <button data-topmenu class="topmenu-btn px-3.5 py-1.5 rounded-md hover:bg-white/15 transition">系统管理</button>
     </nav>
@@ -1594,10 +1594,10 @@ input:where([type='button'], [type='reset'], [type='submit']),
 var TOP_MODULES = [
   { key: 't_map',         title: '地图总览' },
   { key: 't_plots',       title: '地块总览' },
-  { key: 't_inorganic',   title: '无机档案' },
+  { key: 't_inorganic',   title: '无人机档案' },
   { key: 't_plotArchive', title: '地块档案' },
   { key: 't_uav',         title: '无人机巡检' },
-  { key: 't_soil',        title: '农壤普查' },
+  { key: 't_soil',        title: '土壤普查' },
   { key: 't_advice',      title: '农事建议' },
   { key: 't_system',      title: '系统管理' }
 ];
@@ -1937,9 +1937,9 @@ Object.assign(MODAL_CONTENT, {
     '<div class="mt-4 flex gap-2"><button data-modal="t_plotArchive" data-title="地块档案" data-wide="1" class="flex-1 py-2 text-xs text-white bg-agri-green rounded-lg hover:bg-agri-green-dark">查看地块档案</button>' +
     '<button data-modal="retestFields" data-title="待复测农田" data-wide="1" class="flex-1 py-2 text-xs text-amber-600 border border-amber-300 rounded-lg hover:bg-amber-50">查看待复测农田（12）</button></div>',
 
-  /* 3. 无机档案（硬件/设备档案） */
+  /* 3. 无人机档案（硬件/设备档案） */
   t_inorganic:
-    '<p class="text-xs text-gray-500">平台无机硬件设备档案，统一登记监测终端与多光谱无人机。</p>' +
+    '<p class="text-xs text-gray-500">平台硬件设备档案，统一登记监测终端与多光谱无人机。</p>' +
     '<div class="mt-3 grid grid-cols-2 gap-3">' +
       '<div class="rounded-xl bg-agri-dark text-white p-4"><div class="text-xs text-white/60">ZK-01 智能监测终端</div><div class="mt-2 space-y-1 text-xs"><div class="flex justify-between"><span class="text-white/60">供电</span><span>太阳能</span></div><div class="flex justify-between"><span class="text-white/60">防护等级</span><span>IP66</span></div><div class="flex justify-between"><span class="text-white/60">在线率</span><span class="text-emerald-300">94.2%</span></div></div></div>' +
       '<div class="rounded-xl border border-black/5 p-4"><div class="text-xs text-gray-500">多光谱无人机</div><div class="mt-2 space-y-1 text-xs"><div class="flex justify-between"><span class="text-gray-400">植被指数</span><span class="text-agri-dark">NDVI / NDRE</span></div><div class="flex justify-between"><span class="text-gray-400">单台覆盖</span><span class="text-agri-dark">2000-3000 亩</span></div><div class="flex justify-between"><span class="text-gray-400">本月巡检</span><span class="text-agri-dark">187 架次</span></div></div></div>' +
@@ -1985,7 +1985,7 @@ Object.assign(MODAL_CONTENT, {
     '<div class="mt-4 flex gap-2"><button data-modal="uavInspect" data-title="多光谱无人机巡检" class="flex-1 py-2 text-xs text-white bg-agri-green rounded-lg hover:bg-agri-green-dark">调度巡检任务</button>' +
     '<button data-modal="todoUav" data-title="无人机巡检任务" class="flex-1 py-2 text-xs text-agri-green border border-agri-green/30 rounded-lg hover:bg-agri-accent">查看 52 个任务</button></div>',
 
-  /* 6. 农壤普查 */
+  /* 6. 土壤普查 */
   t_soil:
     '<div class="grid grid-cols-3 gap-3 text-center">' +
       '<div class="p-3 rounded-lg bg-agri-bg"><div class="text-xs text-gray-500">今日采样任务</div><div class="text-lg font-bold text-agri-green">8<span class="text-xs font-normal">个</span></div></div>' +
